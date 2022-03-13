@@ -14,7 +14,7 @@ Components required
 
 - [ESP32][esp32-shop]
 - [Dupont Jumpers][dupont-jumpers-shop]
-- 3D printed case (see the [case](/case) folder)
+- 3D printed case
 - KY025: [KY025-shop]
 - LED RGB 5mm 4 pin - Cathode: [Banggood][rgbled-bg-shop]
 
