@@ -1,0 +1,77 @@
+Eneter below in cofiguration.yaml
+
+utility_meter:
+  daily_water_total:
+    source: sensor.water_meter
+    cycle: daily
+  hourly_water_total:
+    source: sensor.water_meter
+    cycle: hourly
+  monthly_water_total:
+    source: sensor.water_meter
+    cycle: monthly
+
+sensor:
+    #Water meter pulse count
+  - platform: history_stats
+    name: Water Meter Pulse
+    entity_id: binary_sensor.water_meter_invert
+    state: 'on'
+    type: count
+    start: '{{ now().replace(hour=0, minute=0, second=0) }}'
+    end: '{{ now() }}'
+
+    #Water usage calulation
+  - platform: template
+    sensors:
+      water_meter:
+        device_class: water
+        unit_of_measurement: L
+        value_template: >-
+          {% set count = states('sensor.water_meter_pulse') | int %}
+          {% set L_per_pulse = 0.5 %}
+          {% set L = count * L_per_pulse %}
+          {{ L|round(1, 'floor') }}
+        availability_template: >
+          {% if is_state("sensor.water_meter_pulse", "unavailable") %}
+            false
+          {% else %}
+            true
+          {% endif %}
+
+
+template:
+  - sensor:
+      #m3 conversion for energy dashboard
+    - name: "Water Consumption"
+      state: "{{ states('sensor.water_meter')|float * 0.001 }}"
+      unit_of_measurement: m³
+      device_class: water
+      state_class: total_increasing
+      
+      #Water flow caculation
+    - name: "Water Flow"
+      unit_of_measurement: 'L/h'
+      state_class: measurement
+      unique_id: water_flow_per_hour
+      state: >-
+        {% set water_flow_hour = ((state_attr('binary_sensor.water_flow_trend', 'gradient') | float(0)) * 3600) | round(1, 'floor') %}
+        {% if water_flow_hour >= 0 %}
+          {{ water_flow_hour }}
+        {% else %}
+          {{ 0 }}
+        {% endif %}
+        
+binary_sensor:
+  - platform: trend
+    sensors:
+      water_flow_trend:
+        entity_id: sensor.water_meter
+        max_samples: 2
+        
+  - platform: template
+    sensors:
+      water_meter_invert:
+        value_template: >-
+          {{ is_state('binary_sensor.water_meter_contact', 'off') }}
+        device_class: door
