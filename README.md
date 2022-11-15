@@ -1,6 +1,20 @@
 # Sydney-Water-Meter
-Measure your water consumption with the pulse LED on your Sydney water meter
+Measure your water consumption with the magnetic flow sensor on your Sydney water meter.
 
+## Common Parts
+
+The below parts are required for both the Zigbee and ESP version
+- [Waterproof Enclosure] [case-shop]
+- [Cable Gland] [gland-shop]
+## Zigbee Setup
+
+Components required
+- [Aqara Door Window Sensor]
+
+
+## ESP Setup
+
+##ESP Has not been tried yet##
 
 Using a ESP32, KY025 board and a tri coloured LED for status indictation.
 
@@ -51,3 +65,6 @@ How the status LED is connected to the ESP board of your choice. For each measur
 [dupont-jumpers-shop]: https://au.banggood.com/120pcs-20cm-Male-To-Female-Female-To-Female-Male-To-Male-Color-Breadboard-Jumper-Cable-Dupont-Wire-p-974006.html?rmmds=myorder&cur_warehouse=CN
 [KY025-shop]: https://au.banggood.com/KY-025-4pin-Magnetic-Dry-Reed-Pipe-Switch-Magnetron-Sensor-Switch-Module-p-1391348.html?rmmds=myorder&cur_warehouse=CN
 [rgbled-bg-shop]: https://au.banggood.com/50pcs-LED-RGB-Common-Cathode-4-Pin-F5-5MM-Diode-p-1016398.html?rmmds=myorder&cur_warehouse=CN
+[Aqara Door Window Sensor]: https://www.aliexpress.com/item/32991903307.html?spm=a2g0o.order_list.0.0.42611802kYyjMQ
+[case-shop]: https://www.aliexpress.com/item/4000242432947.html?spm=a2g0o.order_list.0.0.42611802kYyjMQ
+[gland-shop]: https://www.aliexpress.com/item/4000242432947.html?spm=a2g0o.order_list.0.0.42611802kYyjMQ
