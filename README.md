@@ -43,7 +43,7 @@ Components required
 
 In the tables below you will find more information, about how to connect the various components.
 
-##### KY025 Board
+#### KY025 Board
 
 Remove the reed switch from the KY025 board and solder the required lenght of wire in its place and the other end of wire to a reed switch making sure the exposed leads are covered with heat shrink.
 
