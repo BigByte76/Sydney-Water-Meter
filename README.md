@@ -7,16 +7,17 @@ This works by calculating how many pulses your water meter does for every 1L of 
 ## Common Parts
 
 The below parts are recommended for both the Zigbee and ESP version
-- [Waterproof Enclosure] [case-shop]
-- [Cable Gland] [gland-shop]
+- [Waterproof Enclosure][case-shop]
+- [Cable Gland][gland-shop]
 - Required length of 2 core wire
-- [Reed Switch] [reed-switch]
+- [Reed Switch][reed-switch]
+- Heatshrink
 
 ## Zigbee Version Setup
 
 Components required
 
-- [Aqara Door Window Sensor] [Zigbee-sensor]
+- [Aqara Door Window Sensor][Zigbee-sensor]
 
 Remove the reed switch from the sesnor board and solder the required lenght of wire in its place and the other end of wire to a reed switch making sure the exposed leads are covered with heat shrink.
 
