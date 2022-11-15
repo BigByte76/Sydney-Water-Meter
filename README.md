@@ -1,32 +1,34 @@
 # Sydney-Water-Meter
 Measure your water consumption with the magnetic flow sensor on your Sydney water meter.
 
+This works by calculating how many pulses your water meter does for every 1L of water. The code is based off one pulse for every 0.5L of water.
+
+
 ## Common Parts
 
-The below parts are required for both the Zigbee and ESP version
+The below parts are recommended for both the Zigbee and ESP version
 - [Waterproof Enclosure] [case-shop]
 - [Cable Gland] [gland-shop]
 - Required length of 2 core wire
 - [Reed Switch] [reed-switch]
--
-## Zigbee Setup
+
+## Zigbee Version Setup
 
 Components required
 
 - [Aqara Door Window Sensor] [Zigbee-sensor]
 
-See zigbee file for home assistant code.
+Remove the reed switch from the sesnor board and solder the required lenght of wire in its place and the other end of wire to a reed switch making sure the exposed leads are covered with heat shrink.
 
-## ESP Setup
+See water-meter-zigbee-YAML file for home assistant code.
 
-##ESP Has not been tried yet##
+## ESP Version Setup
+
+## I have not tried this yet as I use the zigbee version ##
 
 Using a ESP32, KY025 board and a tri coloured LED for status indictation.
 
-Facebook link
-https://www.facebook.com/groups/HomeAssistant/permalink/3126492500955432
-
-## Hardware
+### Hardware
 
 Components required
 
@@ -40,7 +42,9 @@ Components required
 
 In the tables below you will find more information, about how to connect the various components.
 
-#### KY025 Board
+##### KY025 Board
+
+Remove the reed switch from the KY025 board and solder the required lenght of wire in its place and the other end of wire to a reed switch making sure the exposed leads are covered with heat shrink.
 
 How the KY025 board is connected to the ESP32
 
