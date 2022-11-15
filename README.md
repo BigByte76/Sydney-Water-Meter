@@ -6,14 +6,16 @@ Measure your water consumption with the magnetic flow sensor on your Sydney wate
 The below parts are required for both the Zigbee and ESP version
 - [Waterproof Enclosure] [case-shop]
 - [Cable Gland] [gland-shop]
-- 2 core wire
-- Reed Switch [reed-switch]
+- Required length of 2 core wire
+- [Reed Switch] [reed-switch]
 -
 ## Zigbee Setup
 
 Components required
+
 - [Aqara Door Window Sensor] [Zigbee-sensor]
 
+See zigbee file for home assistant code.
 
 ## ESP Setup
 
@@ -23,7 +25,6 @@ Using a ESP32, KY025 board and a tri coloured LED for status indictation.
 
 Facebook link
 https://www.facebook.com/groups/HomeAssistant/permalink/3126492500955432
-
 
 ## Hardware
 
@@ -61,6 +62,7 @@ How the status LED is connected to the ESP board of your choice. For each measur
 | BLUE   | D5 (GPIO5) 
 | GND    | GND       
 
+See water-meter.yaml for ESPHome code
 
 <!-- Hardware -->
 [esp32-shop]: https://au.banggood.com/Geekcreit-ESP32-WiFi+bluetooth-Development-Board-Ultra-Low-Power-Consumption-Dual-Cores-Pins-Unsoldered-p-1214159.html?rmmds=myorder&cur_warehouse=CN
