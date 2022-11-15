@@ -1,4 +1,4 @@
-# Sydney-Water-Meter
+# Sydney Water Meter
 Measure your water consumption with the magnetic flow sensor on your Sydney water meter.
 
 This works by calculating how many pulses your water meter does for every 1L of water. The code is based off one pulse for every 0.5L of water.
