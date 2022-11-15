@@ -11,7 +11,7 @@ The below parts are recommended for both the Zigbee and ESP version
 - [Cable Gland][gland-shop]
 - Required length of 2 core wire
 - [Reed Switch][reed-switch]
-- Heatshrink
+- Heat shrink
 
 ## Zigbee Version Setup
 
