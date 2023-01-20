@@ -75,6 +75,6 @@ See water-meter.yaml for ESPHome code
 [KY025-shop]: https://au.banggood.com/KY-025-4pin-Magnetic-Dry-Reed-Pipe-Switch-Magnetron-Sensor-Switch-Module-p-1391348.html?rmmds=myorder&cur_warehouse=CN
 [rgbled-bg-shop]: https://au.banggood.com/50pcs-LED-RGB-Common-Cathode-4-Pin-F5-5MM-Diode-p-1016398.html?rmmds=myorder&cur_warehouse=CN
 [Zigbee-sensor]: https://www.aliexpress.com/item/32991903307.html?spm=a2g0o.order_list.0.0.42611802kYyjMQ
-[case-shop]: https://www.aliexpress.com/item/4000242432947.html?spm=a2g0o.order_list.0.0.42611802kYyjMQ
+[case-shop]: https://www.aliexpress.com/item/4000044564502.html?spm=a2g0o.order_list.order_list_main.201.505a1802xppMPN
 [gland-shop]: https://www.aliexpress.com/item/4000242432947.html?spm=a2g0o.order_list.0.0.42611802kYyjMQ
 [reed-switch]: https://www.aliexpress.com/item/4000773848015.html?spm=a2g0o.productlist.0.0.341b759cy7X1y2&algo_pvid=9a549358-1722-4ee8-a29d-80e92bca3703&algo_exp_id=9a549358-1722-4ee8-a29d-80e92bca3703-3&pdp_ext_f=%7B%22sku_id%22%3A%2210000007741367206%22%7D&pdp_npi=2%40dis%21AUD%211.26%211.14%21%21%211.59%21%21%4021031a5516684838702068314e3aff%2110000007741367206%21sea&curPageLogUid=UU7Mj9E39Y3I
